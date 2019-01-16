@@ -37,3 +37,6 @@ ru:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
+
+  confirm:
+    are_you_sure: 'Вы уверены?'
