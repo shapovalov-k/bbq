@@ -12,7 +12,7 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
   validates :email, format: /\A[a-zA-Z0-9\-_.]+@[a-zA-Z0-9\-_.]+\z/
 
-  #before_validation :set_name, on: :create
+  # before_validation :set_name, on: :create
 
   private
 
