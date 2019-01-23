@@ -1,16 +1,44 @@
-<h2>Forgot your password?</h2>
-
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-xs-12 col-sm-6 col-md-5">
+        <div class="row well">
+
+          <h3 class="text-center">Забыли пароль?</h3>
+
+          <form class="form">
+
+            <div class="col-xs-12">
+              <div class="form-group">
+                <%= render partial: 'partials/form_errors', locals: {model: resource} %>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="form-group">
+                <%= f.label :email %><br />
+                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="form-group">
+                <%= f.submit "Не помню пароль" %>
+              </div>
+            </div>
+
+          </form>
+
+            <div class="col-xs-12">
+              <div class="form-group">
+                <%= render "devise/shared/links" %>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
 <% end %>
-
-<%= render "devise/shared/links" %>
