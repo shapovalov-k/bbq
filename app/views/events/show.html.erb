@@ -50,16 +50,18 @@
           </p>
         </div>
       </div>
-      <div class="event-subscription-form">
-        <h4>Я пойду:</h4>
-        <div>
-          <%= render partial: 'subscriptions/form', locals: {
-              subscription: @new_subscription || @event.subscriptions.build
-          } %>
-        </div>
-      </div>
-    </div>
 
+      <% unless @event.user == current_user %>
+        <div class="event-subscription-form">
+          <h4>Я пойду:</h4>
+          <div>
+            <%= render partial: 'subscriptions/form', locals: {
+                subscription: @new_subscription || @event.subscriptions.build
+            } %>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
   </div>
 </div>

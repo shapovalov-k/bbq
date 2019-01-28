@@ -56,3 +56,4 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      email_busy: 'Пользователь с таким Email-ом уже зарегистрирован у нас на сайте'
