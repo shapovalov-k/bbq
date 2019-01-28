@@ -15,6 +15,8 @@ class User < ApplicationRecord
 
   after_commit :link_subscriptions, on: :create
 
+  mount_uploader :avatar, AvatarUploader
+
   # before_validation :set_name, on: :create
 
   private

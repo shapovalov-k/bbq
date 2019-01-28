@@ -9,6 +9,10 @@ gem 'devise-i18n'
 
 gem 'rails-i18n'
 
+gem 'carrierwave'
+gem 'rmagick'
+gem 'mini_magick'
+
 
 gem 'twitter-bootstrap-rails', '~> 3.2', '>= 3.2.2'
 
