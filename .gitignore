@@ -16,6 +16,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/tmp
 
 # Ignore uploaded files in development
 /storage/*
@@ -34,3 +35,4 @@
 .idea
 .DS_Store
 */.DS_Store
+public/uploads
