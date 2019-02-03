@@ -30,7 +30,7 @@ class Subscription < ApplicationRecord
   end
 
   def email_registered?
-    if user_email.present? && User.where(email: user_email).present?
+    if user_email.present? && User.exists?(email: user_email)
       errors.add(:email, I18n.t('subscriptions.subscription.email_busy'))
     end
   end
