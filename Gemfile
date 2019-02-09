@@ -7,6 +7,9 @@ gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
 gem 'devise'
 gem 'devise-i18n'
 
+gem 'rubysl-resolv'
+
+
 gem 'rails-i18n'
 
 gem 'carrierwave'
@@ -31,6 +34,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "letter_opener", :group => :development
 end
 
 group :development do
