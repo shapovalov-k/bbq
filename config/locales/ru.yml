@@ -73,6 +73,7 @@ ru:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
       email_busy: 'Пользователь с таким Email-ом уже зарегистрирован у нас на сайте'
+      events_creator: 'Автор не может подписаться на своё событие'
 
   event_mailer:
     comment:
