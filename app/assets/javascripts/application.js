@@ -10,9 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //= require jquery
+//= require jquery_ujs
 //= require twitter/bootstrap
 //= require twitter/bootstrap/alert
 //= require rails-ujs
 //= require activestorage
+//= require maps
+//= require ekko-lightbox
+//= require lightbox
 //= require_tree .
-//= require map
