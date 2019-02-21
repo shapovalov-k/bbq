@@ -28,7 +28,7 @@ Rails.application.configure do
 
   config.assets.enabled = true
 
-  config.assets.precompile += %w( maps.js ekko-lightbox.js lightbox.js ekko-lightbox.css)
+  config.assets.precompile += %w( maps.js ekko-lightbox_bootstraped.coffee lightbox_bootstraped.coffee ekko-lightbox.css)
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
